@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3); /* Subtle pastel gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background 0.5s ease-in-out; /* Smooth background transitions */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .card {
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Rounded corners */
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out; /* Add a hover effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lifting effect */
+  }
+  
+  h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly rounded inputs */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue glow */
+  }
+  
+  .button {
+    width: 100%;
+    background: linear-gradient(135deg, #67d9f1, #53a8fd); /* Gradient button */
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #53a8fd, #67d9f1); /* Invert gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #eef4f7;
+    color: #333;
+  }
+  
+  td {
+    background-color: #fafcff;
+  }
+  
+  table tr:hover td {
+    background-color: #e9f5fc; /* Highlight row on hover */
+  }
