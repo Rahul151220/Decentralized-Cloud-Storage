@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decentralized Cloud Storage</title>
+  <link rel="stylesheet" href="DCS.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Decentralized Cloud Storage</h2>
+      <input type="text" id="fileHash" placeholder="Enter File Hash" class="input">
+      <button id="uploadFileButton" class="button">Upload File</button>
+    </div>
+
+    <div class="card">
+      <h2>Make Payment</h2>
+      <input type="text" id="recipientAddress" placeholder="Recipient Address" class="input">
+      <input type="text" id="amount" placeholder="Amount in ETH" class="input">
+      <button id="makePaymentButton" class="button">Send Payment</button>
+    </div>
+
+    <div class="card">
+      <h2>Uploaded Files</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>File Hash</th>
+            <th>Owner</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody id="filesTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="DCS.js"></script>
+</body>
+</html>
